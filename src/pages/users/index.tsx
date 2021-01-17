@@ -5,7 +5,7 @@
 import React, { useState, FC, useRef } from 'react';
 import { Table, Popconfirm, Button, Pagination, message } from 'antd';
 import ProTable, { ProColumns, TableDropdown } from '@ant-design/pro-table';
-import { connect, Dispatch, Loading, UserState } from 'umi'; // UserState自定义的
+import { connect, Dispatch, Loading, UserState, useModel } from 'umi'; // UserState自定义的
 
 import { editRecord, addRecord } from './service';
 
@@ -232,8 +232,10 @@ const userListPage: FC<UserPageProps> = ({
   // dataSource={users.data}
   // request={requestHandler}
   // actionRef={ref}
+  const { user } = useModel('user');
   return (
     <div className="tabel-container ">
+      {user}
       {/* <Button type="primary" onClick={addHandler}>add</Button>
       <Button onClick={reloadHandler}>reload</Button> */}
       <ProTable

@@ -22,3 +22,6 @@ $ yarn start
 
 # ts
 ts基础
+
+# models
+全局共享
