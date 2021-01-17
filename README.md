@@ -20,6 +20,9 @@ $ yarn start
 * https://ant.design/components/date-picker-cn/#API
 * https://pro.ant.design/docs/getting-started
 
+# pages/users
+http://localhost:8000/users
+
 # ts
 ts基础
 
